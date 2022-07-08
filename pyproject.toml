@@ -1,0 +1,24 @@
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "TitoGrossi", email = "tito.brossi@gmail.com"},
+]
+dependencies = [
+    "Pympler>=1.0.1",
+]
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+[tool.pdm]
+
+[tool.pdm.scripts]
+measure = "python main.py"
+dict_access = "python dict_access.py"
+test_dc = "python dc.py"
+break_inheritance = "python classes.py"
+
+[build-system]
+requires = ["pdm-pep517>=0.12.0"]
+build-backend = "pdm.pep517.api"
